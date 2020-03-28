@@ -1,0 +1,246 @@
+:root {
+  --dark-bg-color: rgb(5, 5, 8);
+  --light-bg-color: rgb(20, 20, 25);
+  --blue-accent: rgb(255, 88, 88);
+  --text-color: rgba(255, 255, 255, 0.897);
+  --cia-font: 'Josefin Sans', sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  color: var(--text-color);
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+html,
+body {
+  scroll-behavior: smooth;
+  background: var(--dark-bg-color);
+}
+
+.btn {
+  display: block;
+  background: var(--blue-accent);
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 8px 15px;
+  color: black;
+  border-radius: 4px;
+  -webkit-box-shadow: 0 0 4px 10px rgba(0, 0, 0, 0.459);
+          box-shadow: 0 0 4px 10px rgba(0, 0, 0, 0.459);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+nav {
+  background: var(--dark-bg-color);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 20px 30px;
+  -webkit-box-shadow: 0 0 8px 10px black;
+          box-shadow: 0 0 8px 10px black;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+}
+
+nav h1 {
+  color: var(--blue-accent);
+  letter-spacing: 1px;
+  font-family: var(--cia-font);
+}
+
+nav ul {
+  list-style: none;
+  margin-left: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 60%;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+nav ul li {
+  margin-left: auto;
+  font-weight: 200;
+  letter-spacing: 2px;
+}
+
+nav a {
+  text-decoration: none;
+  -webkit-transition: all 300ms ease-out;
+  transition: all 300ms ease-out;
+}
+
+nav a:hover {
+  /* text-decoration: underline; */
+  border-bottom: solid 1px var(--blue-accent);
+  color: var(--blue-accent);
+}
+
+header {
+  height: 60vh;
+  padding: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+header h1 {
+  font-size: 4rem;
+  font-family: var(--cia-font);
+}
+
+header p {
+  font-size: 1.5rem;
+  letter-spacing: 1px;
+  font-weight: 400;
+  line-height: 1.8rem;
+  color: var(--blue-accent);
+}
+
+header strong {
+  color: white;
+}
+
+header .btn {
+  margin-top: 10px;
+}
+
+main {
+  padding: 30px;
+}
+
+main p {
+  font-size: 1.2rem;
+  line-height: 1.6rem;
+  margin: 10px 0;
+  color: var(--text-color);
+}
+
+main h1 {
+  letter-spacing: 1px;
+}
+
+main a {
+  color: var(--blue-accent);
+}
+
+main .pre h1 {
+  color: var(--blue-accent);
+}
+
+main .tools,
+main .projects {
+  margin-top: 30px;
+}
+
+main .tools > h1,
+main .projects > h1 {
+  color: var(--blue-accent);
+}
+
+main .tool,
+main .project {
+  background: var(--light-bg-color);
+  padding: 20px;
+  margin: 10px 0;
+  border-radius: 6px;
+  -webkit-box-shadow: 0 0 4px 10px rgba(0, 0, 0, 0.459);
+          box-shadow: 0 0 4px 10px rgba(0, 0, 0, 0.459);
+}
+
+footer {
+  /* position: absolute;
+    bottom: 0; */
+  width: auto;
+  padding: 30px;
+  background: var(--light-bg-color);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+footer h2 {
+  margin-bottom: 10px;
+}
+
+footer .links a {
+  display: block;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  color: v(--accent);
+}
+
+footer .links h1 {
+  font-size: 1.5rem;
+}
+
+@media screen and (max-width: 640px) {
+  nav {
+    position: fixed;
+    width: 100%;
+    top: 100%;
+    -webkit-transform: translateY(-100%);
+            transform: translateY(-100%);
+    padding: 20px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  nav h1 {
+    font-size: 1.6rem;
+  }
+  nav ul {
+    margin-top: 10px;
+    width: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  nav ul #about-link {
+    display: none;
+  }
+  nav ul li {
+    margin: 0;
+    margin-top: 4px;
+  }
+  main {
+    padding: 20px;
+  }
+  header {
+    padding: 20px;
+    height: 40vh;
+  }
+  header h1 {
+    font-size: 2.4rem;
+  }
+  footer {
+    padding: 20px;
+    padding-bottom: 200px;
+  }
+}
+/*# sourceMappingURL=main.css.map */
