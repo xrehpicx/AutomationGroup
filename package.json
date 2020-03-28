@@ -1,0 +1,19 @@
+{
+  "name": "automationgroup",
+  "version": "1.0.0",
+  "description": "Automation Groups get started guide thing",
+  "main": "index.js",
+  "scripts": {
+    "test":"git add . && git commit -m 'cia' && git push"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xrehpicx/AutomationGroup.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/xrehpicx/AutomationGroup/issues"
+  },
+  "homepage": "https://github.com/xrehpicx/AutomationGroup#readme"
+}
