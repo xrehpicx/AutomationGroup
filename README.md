@@ -55,8 +55,6 @@ if ur an android dev or not u can always make an app using android studio and an
 ### Scripting Languages
 You can always use scripting languages like python or javascript or shellscripting too for automation on any device
 
-*Python is not a real programming language so stop worshipping it*
-
 
 #### The Projects
 as this is just a get started guid all of these projects can be made in tasker or macrodroid.
